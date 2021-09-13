@@ -1,11 +1,15 @@
-/*
+/* placeholder
 
-const addButton = document.getElementById("add-button");
-
-addButton.addEventListener("click", function () {
-  const bigText = document.getElementById("bug-text");
-
-  bigText.innerHTML = bigText.innerHTML + 
-});
 
 */
+
+const addButton = document.getElementById("add-comment");
+
+addButton.addEventListener("click", function () {
+  const unorderedList = document.getElementById("unordered-list");
+
+  let newListItem = document.createElement("p");
+  newListItem.innerHTML = "test";
+
+  unorderedList.appendChild(newListItem);
+});
