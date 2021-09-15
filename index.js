@@ -1,8 +1,3 @@
-/* placeholder
- */
-
-console.log("Hello world!");
-
 /*
 if (document.readyState !== "loading") {
   console.log("Document is ready");
@@ -17,33 +12,17 @@ if (document.readyState !== "loading") {
 function intializeCode() {
 */
 
-/*
-addButton.addEventListener("click", function () {
-  /*
-    const textArea = document.getElementById("text-area");
-
-    let newText = document.createElement("p");
-    newText.innerHTML = "test";
-
-    textArea.appendChild(newText);
-
-
-
-  let list = document.getElementById("unordered-list");
-  let listItem = document.createElement("li");
-  let userComment = document.getElementById("text-area").value;
-  let textNode = document.createTextNode(userComment);
-  textNode.appendChild(listItem);
-  document.getElementById("unordered-list").appendChild(textNode);
-*/
+console.log("Hello world!");
 
 const addButton = document.getElementById("add-comment");
 
 addButton.addEventListener("click", function () {
   const uList = document.getElementById("unordered-list");
+  const textArea = document.getElementById("text-area");
 
+  let input = textArea.value; // https://www.w3schools.com/jsref/prop_textarea_value.asp
   let newListItem = document.createElement("li");
-  newListItem.innerHTML = "List item";
+  newListItem.innerHTML = input;
 
   uList.appendChild(newListItem);
 });
